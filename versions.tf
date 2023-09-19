@@ -8,3 +8,6 @@ resource "aws_lightsail_instance" "dimitri" {
 output "claude" {
   value = aws_lightsail_instance.dimitri.public_ip_address
 }
+resource "aws_iam_user" "dimitri" {
+    name = "dimitri"
+}
